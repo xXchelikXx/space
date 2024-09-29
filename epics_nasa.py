@@ -18,7 +18,7 @@ def epics_nasa(token):
 
 
 def main():
-    load_dotenv
+    load_dotenv()
     token = os.environ["NASA_KEY"]
     epics_nasa(token)
 
