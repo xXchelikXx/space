@@ -21,7 +21,11 @@ pip install -r requirements.txt
 Пример содержания:
 
 ```
-TOKEN='KEY'
+TG_BOT_TOKEN='673457692:JFL-5JfkgjKFK<kkgksa8kdfjJGKFLkdf0068kgkGk'
+
+NASA_KEY='yvzA2RYrLI6JxdKnF10n7LxacYTO2pXHvL23q16L'
+
+TG_CHAT_ID='@botest'
 ```
 
 В `TG_BOT_TOKEN` надо токен бота в тг, который можно получить при создании бота.
@@ -30,7 +34,9 @@ TOKEN='KEY'
 
 Он выглядит примерно так `yvzA2RYrLI6JxdKnF10n7LxacYTO2pXHvL23q16L`.
 
-В `TG_CHAT_ID` надо поставить название тг канала`('@название_канала')`
+В `TG_CHAT_ID` надо поставить название тг канала`('@название_канала')`.
+
+Примеры сверху.
 
 ## Как запустить
 
