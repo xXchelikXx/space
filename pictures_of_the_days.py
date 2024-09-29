@@ -13,7 +13,7 @@ def find_extension(url):
     return name, extension
 
 
-def get_picture_of_the_day(token):
+def get_pictures_of_the_days(token):
     url = f'https://api.nasa.gov/planetary/apod?api_key={token}'
     params = {'count': 30}
     response = requests.get(url, params=params)
