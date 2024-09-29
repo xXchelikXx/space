@@ -14,8 +14,8 @@ def find_extension(url):
 
 
 def get_pictures_of_the_days(token):
-    url = f'https://api.nasa.gov/planetary/apod?api_key={token}'
-    params = {'count': 30}
+    url = f'https://api.nasa.gov/planetary/apod'
+    params = {'count': 30, 'api_key': token}
     response = requests.get(url, params=params)
     response.raise_for_status()
     for links in response.json():
