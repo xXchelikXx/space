@@ -26,9 +26,10 @@ def picture_of_the_day(token):
 
 
 def main():
+    load_dotenv()
     token = os.environ['NASA_KEY']
     picture_of_the_day(token)
-    load_dotenv()
+
 
 if __name__ == "__main__":
     main()
