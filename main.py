@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 def main():
     load_dotenv()
-    token = os.environ['BOT_TOKEN']
+    token = os.environ['TG_BOT_TOKEN']
     bot = telegram.Bot(token=token)
     images = os.walk('images')
     for image in images:
