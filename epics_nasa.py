@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 
 def get_epics_nasa(token):
     url = f'https://api.nasa.gov/EPIC/api/natural/image'
-    params = {'count': 30, 'api_key': token}
+    count = 30
+    params = {'count': 'count', 'api_key': token}
     response = requests.get(url, params=params)
     response.raise_for_status()
     for links in response.json():
