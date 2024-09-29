@@ -26,7 +26,7 @@ def picture_of_the_day(token):
 
 
 def main():
-    token = os.environ['URL_TOKEN']
+    token = os.environ['TOKEN_FOR_URL']
     picture_of_the_day(token)
     load_dotenv()
 
