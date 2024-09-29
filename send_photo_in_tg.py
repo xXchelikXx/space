@@ -15,7 +15,7 @@ def main():
     time_waiting = 144000
     while True:
         random.shuffle(name_images)
-        for download_image in name_images:
+        for name_image in name_images:
             with open(f'images/{download_image}', 'rb') as file:
                 bot.send_photo(chat_id='@beta_bot_test', photo=file)
             time.sleep(time_waiting)
