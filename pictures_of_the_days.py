@@ -19,9 +19,9 @@ def get_pictures_of_the_days(token):
     params = {'count': 'count', 'api_key': token}
     response = requests.get(url, params=params)
     response.raise_for_status()
-    for links in response.json():
+    for link in response.json():
         if links.get("media_type") == "image":
-            links_of_pictures = links['url'] or links['hdurl']
+            link_of_the_picture = links['url'] or links['hdurl']
         name, extension = find_extension(links_of_pictures)
         download_image(links_of_pictures, f"{name}{extension}")
 
