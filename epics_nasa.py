@@ -11,10 +11,10 @@ def get_epics_nasa(token):
     params = {'count': 'count', 'api_key': token}
     response = requests.get(url, params=params)
     response.raise_for_status()
-    for links in response.json():
-        epic_date = datetime.fromisoformat(links["date"]).strftime("%Y/%m/%d")
-        epic_name = links["image"]
-        link_of_pictures = f'https://api.nasa.gov/EPIC/archive/natural/{epic_date}/png/{epic_name}.png?api_key={token}'
+    for link in response.json():
+        epic_date = datetime.fromisoformat(link["date"]).strftime("%Y/%m/%d")
+        epic_name = link["image"]
+        link_of_the_picture = f'https://api.nasa.gov/EPIC/archive/natural/{epic_date}/png/{epic_name}.png?api_key={token}'
         download_image(link_of_pictures, f'epic_{epic_name}.png')
 
 
