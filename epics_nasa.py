@@ -5,7 +5,7 @@ from download_image import download_image
 from dotenv import load_dotenv
 
 
-def get_epics_nasa(token):
+def get_epic_nasa_images(token):
     url = f'https://api.nasa.gov/EPIC/api/natural/image'
     count = 30
     params = {'count': 'count', 'api_key': token}
