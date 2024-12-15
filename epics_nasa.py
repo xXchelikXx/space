@@ -22,7 +22,7 @@ def get_epic_nasa_images(token):
 def main():
     load_dotenv()
     token = os.environ["NASA_KEY"]
-    epics_nasa(token)
+    get_epic_nasa_images(token)
 
 
 if __name__ == "__main__":
